@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+<body>  
+<div class="whole">
+    <header id="header">
+        <img  class="logo" id="header-img" src="lmao.png" alt="logo"/>
+        <nav id="nav-bar">
+            <ul class="navs">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#featuress">Features</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Login</button></a>
+    </header><br>
+   <main>
+       <section class="presentation" id="home">
+           <div class="introduction">
+               <div class="intro-text">
+                   <h1>Laptop For The Future</h1>
+                   <p>Here comes the laptop with touchscreen as well as touchscreen mouse pad.</p>
+               </div>
+            </div>   
+           <div class="cover">
+               <img src="../bikeboi/matebook.png" alt="matebook">
+           </div>
+       </section><hr><hr>
+
+       <section class="video" id="about">
+                <div class="videos">
+                    <h1>How It works</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aperiam ab quia aspernatur ea, odit officiis error modi quasi labore distinctio velit quis odio ut saepe sint? Nam, quas consequuntur.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque at minima, nisi, neque delectus quasi iure molestiae eveniet ullam illo doloribus dicta blanditiis vero voluptatibus voluptas, odio ipsum. Voluptate.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est minima labore dolorum quae praesentium odit quibusdam, vero hic tenetur libero vitae eum aut fugiat itaque nihil. Exercitationem, ullam illum!
+                    </p>
+                </div>        
+           <div class="frames"><iframe id="video" width="500" height="500" src="https://www.youtube.com/embed/TDTUbN1bWqQ" frameborder="10"  allowfullscreen></iframe>
+           </div>
+       </section><hr><hr>
+
+       <section class="features" id="featuress">
+           <div class="spacing">
+                <div class="feature-text">
+                    <h1>Our Features</h1>
+                </div>
+            </div>  
+            <div class="svgs">
+                <img src="features.svg" alt="features">
+            </div>
+       </section>
+       <footer>
+       <section class="noman">
+           <form id="form" action="https://www.freecodecamp.com/email-submit" class="forms">
+                <div><input type="email" name="email" id="email" placeholder="Email" class="enter" required>
+                </div>
+            <div>
+                <input type="submit" id="submit" value="submit" class="btn">
+            </div>
+           </form>
+       </section><hr><hr>
+    </footer>
+
+       
+    </main>
+</div>
+    
+</body>
+<style>
+    @media only screen and (max-width: 768px) {
+    .cover img{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    iframe {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videos h1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }    
+
+    .videos p{
+        font-size: 15px;
+    }
+
+    .feature-text h1{
+        font-size: 30px;
+    }
+
+    #header{
+        align-items: center;
+    }
+
+    
+}
+</style>
+
+</html>
+
+

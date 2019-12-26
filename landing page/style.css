@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+li,a,button{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+    max-width: 100%;
+    position: fixed;
+    width: 100%;
+
+       
+}
+
+.logo {
+    cursor: pointer;
+    height: 150px;
+    width: 200px;
+    margin-left: 10px;
+    animation: fadein 2s;
+    margin-right: auto;
+    
+}
+
+.navs {
+    list-style: none;
+}
+
+.navs li{
+    display: inline-block;
+    padding: 40px 40px 40px 40px;
+    animation: fadein 2s;
+}
+
+.navs li a{
+    transition: all 0.3 ease 0s;
+}
+
+.navs li a:hover{
+    color: rgba(1, 204, 255, 0.993);
+   
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
+}
+
+button {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+     
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    min-height: 60rem;
+}
+
+.cover {
+    z-index: -1;
+}
+
+.cover img{
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: fadein 2s;
+}
+
+
+
+.introduction{
+    flex: 1;
+}
+ 
+.intro-text h1{
+    font-size: 44px;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+
+.video{
+    display: flex;
+    align-items: center;
+    
+}
+
+.videos h1 {
+    font-size: 44px;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.videos p{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #585772;
+    margin-left: 15px;
+}
+
+.frames {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.enter {
+    margin-top: 18px;
+    border: 1px solid grey;
+    padding: 0.375rem 0.75rem;
+    border-radius: 5px;
+}
+
+.noman{
+    background: black;
+    text-align: center;
+}
+
+
+.features {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    min-height: 80vh;
+    justify-content: space-around;
+}
+
+.feature-text {
+    font-size: 44px;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(58deg, green, orange);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-left: 15px;
+
+}
+
+.btn {
+    height: 35px;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    box-shadow: 2s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+  }
+
+.svgs img{
+    height: 25rem;
+    width: 25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .cover img{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    iframe {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videos h1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }    
+
+    .videos p{
+        font-size: 15px;
+    }
+
+    .feature-text h1{
+        font-size: 30px;
+    }
+
+    #header{
+        align-items: center;
+    }
+
+    
+}
+
+@media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+
+
+
